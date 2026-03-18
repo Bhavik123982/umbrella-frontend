@@ -65,7 +65,7 @@ function start() {
   const task = document.getElementById("task").value;
   const level = document.getElementById("level").value;
 
-  fetch(`http://localhost:3000/${task}/${level}`)
+  fetch(`https://umbrella-backend.onrender.com/${task}/${level}`)
     .then(res => res.json())
     .then(data => {
       document.getElementById("prompt").innerText = data.prompt;
